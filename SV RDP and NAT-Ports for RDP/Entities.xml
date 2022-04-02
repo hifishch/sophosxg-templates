@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration APIVersion="1805.2" IPS_CAT_VER="1">
+  <Services transactionid="">
+    <Name>RDP 3389</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>3389</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4001</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4001</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4002</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4002</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4003</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4003</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4004</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4004</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4005</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4005</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4006</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4006</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4007</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4007</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4008</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4008</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4009</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4009</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>RDP 4010</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>4010</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+</Configuration>
