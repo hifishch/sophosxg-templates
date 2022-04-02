@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration APIVersion="1805.2" IPS_CAT_VER="1">
+  <Services transactionid="">
+    <Name>RPC Endpoint Mapper</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>135</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>Kerberos password change</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>464</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>464</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>Windows RPC</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>49152:65535</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>LDAP SSL</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>636</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>LDAP GC</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>3268</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>LDAP GC SSL</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>3269</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>Kerberos</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>88</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>88</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <Services transactionid="">
+    <Name>SMB</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>445</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  <ServiceGroup transactionid="">
+    <Name>SG AD Domain Controller</Name>
+    <Description>Service Group for Active Directory domains and trusts.
+(Source: https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/config-firewall-for-ad-domains-and-trusts)</Description>
+    <ServiceList>
+      <Service>DNS</Service>
+      <Service>LDAP</Service>
+      <Service>NTP</Service>
+      <Service>RPC Endpoint Mapper</Service>
+      <Service>Kerberos password change</Service>
+      <Service>Windows RPC</Service>
+      <Service>LDAP SSL</Service>
+      <Service>LDAP GC</Service>
+      <Service>LDAP GC SSL</Service>
+      <Service>Kerberos</Service>
+      <Service>SMB</Service>
+    </ServiceList>
+  </ServiceGroup>
+</Configuration>
