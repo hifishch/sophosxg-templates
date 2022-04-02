@@ -1,4 +1,4 @@
-# Sophos XG Service Group Templates
+# Sophos XG Templates
 This Repo contains multiple (edited) XML exports of Service Groups from Sophos XG Appliances. These Exports can be used to rapid deploy service groups in Sophos XG enviroments.
 ## Types
 This Repo contains multiple types of configurations recognizable by the first two letters of the folders.
