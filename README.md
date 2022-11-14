@@ -2,6 +2,8 @@
 This repo contains multiple (edited) XML exports of services & service groups from Sophos XG appliances. These exports can be used to rapid deploy services and service groups in Sophos XG enviroments.
 ## Types
 This repo contains multiple types of configurations recognizable by the first two letters of the folders.
+### EX - Exeptions
+Conains Web-Eceptions
 ### SV - Service Objects
 Conains service objects only
 ### SG - Service Group
