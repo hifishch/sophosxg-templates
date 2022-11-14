@@ -4,9 +4,13 @@ This repo contains multiple (edited) XML exports of services & service groups fr
 This repo contains multiple types of configurations recognizable by the first two letters of the folders.
 ### EX - Exeptions
 Conains Web-Eceptions
-### SV - Service Objects
-Conains service objects only
 ### SG - Service Group
 Conains a service group and the corresponding services.
+### SV - Service Objects
+Conains service objects only
+### WAF - Web Application Firewall Rules
+Contains Specific Policies for Web Application Firewall (WAF).
+These Templates usually require manual editing of the XML before importing them.
+
 ## Usage
 Sophos XG Appliances only accept XML-files packed as TAR-balls. Mostly theres a TAR-file available. If not feel free to pack the XML-files in a TAR-ball by yourself.
