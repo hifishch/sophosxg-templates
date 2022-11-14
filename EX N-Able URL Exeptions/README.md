@@ -1,4 +1,4 @@
-# Template for Enable Webfilter Exeptions"
+# Template for Enable Webfilter Exeptions
 Creates following Web Filte Exeptions:
 
 ## N-able Communication URLs
