@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration APIVersion="1900.1" IPS_CAT_VER="1">
+  <IPHost transactionid="">
+    <Name>WS EXCHANGE</Name>
+    <IPFamily>IPv4</IPFamily>
+    <HostType>IP</HostType>
+    <IPAddress>172.20.20.20</IPAddress>
+  </IPHost>
+  <RealServers transactionid="">
+    <Name>WS EXCHANGE</Name>
+    <Description/>
+    <Host>WS EXCHANGE</Host>
+    <Type>Encrypted (HTTPS)</Type>
+    <Port>443</Port>
+    <KeepAlive>Enable</KeepAlive>
+    <DisableReuse>Disable</DisableReuse>
+    <TimeOut>1850</TimeOut>
+  </RealServers>
+  <ProtocolSecurity transactionid="">
+    <Name>Microsoft Exchange 2016 Webservices</Name>
+    <Description/>
+    <PassOutlookAnywhere>Enable</PassOutlookAnywhere>
+    <Mode>Reject</Mode>
+    <CookieSigning>Disable</CookieSigning>
+    <StaticUrlHardening>Enable</StaticUrlHardening>
+    <FormHardening>Disable</FormHardening>
+    <AntiVirus>Enable</AntiVirus>
+    <BlockClientsWithBadReputation>Enable</BlockClientsWithBadReputation>
+    <ThreatsFilter>Enable</ThreatsFilter>
+    <EntryURLType>Manual</EntryURLType>
+    <EntryURLList>
+      <EntryURL>/ecp</EntryURL>
+      <EntryURL>/ECP</EntryURL>
+      <EntryURL>/ews</EntryURL>
+      <EntryURL>/EWS</EntryURL>
+      <EntryURL>/Microsoft-Server-ActiveSync</EntryURL>
+      <EntryURL>/oab</EntryURL>
+      <EntryURL>/OAB</EntryURL>
+      <EntryURL>/owa</EntryURL>
+      <EntryURL>/OWA</EntryURL>
+      <EntryURL>/</EntryURL>
+      <EntryURL>/mapi</EntryURL>
+      <EntryURL>/MAPI</EntryURL>
+    </EntryURLList>
+    <AVMode>Sophos</AVMode>
+    <Direction>Uploads</Direction>
+    <BlockUnscannableContent>Enable</BlockUnscannableContent>
+    <LimitScanSize>Disable</LimitScanSize>
+    <Megabytes>0</Megabytes>
+    <SkipRemoteLookups>Disable</SkipRemoteLookups>
+    <ParanoiaLevel>3</ParanoiaLevel>
+    <SkipFilterRules>
+      <FilterRules>920272</FilterRules>
+      <FilterRules>920420</FilterRules>
+      <FilterRules>942420</FilterRules>
+      <FilterRules>960010</FilterRules>
+      <FilterRules>960015</FilterRules>
+      <FilterRules>960018</FilterRules>
+      <FilterRules>960032</FilterRules>
+      <FilterRules>981176</FilterRules>
+      <FilterRules>981203</FilterRules>
+      <FilterRules>981204</FilterRules>
+    </SkipFilterRules>
+    <ThreatFilters>
+      <Filter>Application attacks</Filter>
+      <Filter>SQL injection attacks</Filter>
+      <Filter>XSS attacks</Filter>
+      <Filter>Protocol enforcement</Filter>
+      <Filter>Scanner detection</Filter>
+      <Filter>Data leakages</Filter>
+    </ThreatFilters>
+  </ProtocolSecurity>
+  <ProtocolSecurity transactionid="">
+    <Name>Microsoft Exchange 2016 Autodiscover</Name>
+    <Description/>
+    <PassOutlookAnywhere>Enable</PassOutlookAnywhere>
+    <Mode>Monitor</Mode>
+    <CookieSigning>Disable</CookieSigning>
+    <StaticUrlHardening>Enable</StaticUrlHardening>
+    <FormHardening>Enable</FormHardening>
+    <AntiVirus>Enable</AntiVirus>
+    <BlockClientsWithBadReputation>Enable</BlockClientsWithBadReputation>
+    <ThreatsFilter>Enable</ThreatsFilter>
+    <EntryURLType>Manual</EntryURLType>
+    <EntryURLList>
+      <EntryURL>/autodiscover</EntryURL>
+      <EntryURL>/Autodiscover</EntryURL>
+    </EntryURLList>
+    <AVMode>Sophos</AVMode>
+    <Direction>UploadsAndDownloads</Direction>
+    <BlockUnscannableContent>Enable</BlockUnscannableContent>
+    <LimitScanSize>Disable</LimitScanSize>
+    <Megabytes>0</Megabytes>
+    <SkipRemoteLookups>Disable</SkipRemoteLookups>
+    <ParanoiaLevel>3</ParanoiaLevel>
+    <SkipFilterRules>
+      <FilterRules>960015</FilterRules>
+      <FilterRules>960911</FilterRules>
+    </SkipFilterRules>
+    <ThreatFilters>
+      <Filter>Application attacks</Filter>
+      <Filter>SQL injection attacks</Filter>
+      <Filter>XSS attacks</Filter>
+      <Filter>Protocol enforcement</Filter>
+      <Filter>Scanner detection</Filter>
+      <Filter>Data leakages</Filter>
+    </ThreatFilters>
+  </ProtocolSecurity>
+    <FirewallRule transactionid="">
+    <Name>WAF owa.example.com</Name>
+    <Description/>
+    <IPFamily>IPv4</IPFamily>
+    <Status>Enable</Status>
+    <Position>After</Position>
+    <PolicyType>HTTPBased</PolicyType>
+    <HTTPBasedPolicy>
+      <HostedAddress>#Port2</HostedAddress>
+      <HTTPS>Enable</HTTPS>
+      <ListenPort>443</ListenPort>
+      <Domains>
+        <Domain>owa.example.com</Domain>
+      </Domains>
+      <AccessPaths>
+  <AccessPath>
+    <allowed_networks>Any IPv4</allowed_networks>
+    <auth_profile/>
+    <backend>WS EXCHANGE</backend>
+    <be_path/>
+    <hot_standby>0</hot_standby>
+    <path>/</path>
+    <stickysession_status>0</stickysession_status>
+    <websocket_passthrough>0</websocket_passthrough>
+  </AccessPath>
+</AccessPaths>
+      <Exceptions>
+  <Exception>
+    <op>and</op>
+    <path>/ews/*</path>
+    <path>/EWS/*</path>
+    <path>/Microsoft-Server-ActiveSync/*</path>
+    <path>/Microsoft-Server-ActiveSync*</path>
+    <path>/oab/*</path>
+    <path>/OAB/*</path>
+    <path>/owa/*</path>
+    <path>/OWA/*</path>
+    <skipav>0</skipav>
+    <skipbadclients>0</skipbadclients>
+    <skipcookie>0</skipcookie>
+    <skipform>0</skipform>
+    <skipurl>1</skipurl>
+  </Exception>
+  <Exception>
+    <op>and</op>
+    <path>/owa/ev.owa*</path>
+    <path>/OWA/ev.owa*</path>
+    <skipav>1</skipav>
+    <skipbadclients>0</skipbadclients>
+    <skipcookie>0</skipcookie>
+    <skipform>0</skipform>
+    <skipurl>0</skipurl>
+  </Exception>
+  <Exception>
+    <op>and</op>
+    <path>/rpc/*</path>
+    <path>/RPC/*</path>
+    <path>/mapi/*</path>
+    <path>/MAPI/*</path>
+    <skip_threats_filter_categories>application_attacks</skip_threats_filter_categories>
+    <skip_threats_filter_categories>sql_injection_attacks</skip_threats_filter_categories>
+    <skip_threats_filter_categories>xss_attacks</skip_threats_filter_categories>
+    <skip_threats_filter_categories>protocol_enforcement</skip_threats_filter_categories>
+    <skip_threats_filter_categories>scanner_detection</skip_threats_filter_categories>
+    <skip_threats_filter_categories>data_leakages</skip_threats_filter_categories>
+    <skipav>1</skipav>
+    <skipbadclients>1</skipbadclients>
+    <skipcookie>1</skipcookie>
+    <skipform>1</skipform>
+    <skipurl>1</skipurl>
+  </Exception>
+  <Exception>
+    <op>and</op>
+    <path>/ecp/*</path>
+    <path>/ECP/*</path>
+    <skipav>0</skipav>
+    <skipbadclients>0</skipbadclients>
+    <skipcookie>0</skipcookie>
+    <skipform>0</skipform>
+    <skipurl>1</skipurl>
+  </Exception>
+</Exceptions>
+      <ProtocolSecurity>Microsoft Exchange 2016 Webservices</ProtocolSecurity>
+      <CompressionSupport>Disable</CompressionSupport>
+      <RewriteHTML>0</RewriteHTML>
+      <PassHostHeader>Enable</PassHostHeader>
+      <RewriteCookies>Enable</RewriteCookies>
+      <IntrusionPrevention>WAN TO DMZ</IntrusionPrevention>
+      <TrafficShapingPolicy>None</TrafficShapingPolicy>
+      <Certificate>example.com Wildcard</Certificate>
+      <RedirectHTTP>Enable</RedirectHTTP>
+    </HTTPBasedPolicy>
+  </FirewallRule>
+  <FirewallRule transactionid="">
+    <Name>WAF autodiscover.example.com</Name>
+    <Description/>
+    <IPFamily>IPv4</IPFamily>
+    <Status>Enable</Status>
+    <Position>After</Position>
+    <PolicyType>HTTPBased</PolicyType>
+    <After>
+      <Name>WAF owa.example.com</Name>
+    </After>
+    <HTTPBasedPolicy>
+      <HostedAddress>#Port2</HostedAddress>
+      <HTTPS>Enable</HTTPS>
+      <ListenPort>443</ListenPort>
+      <Domains>
+        <Domain>autodiscover.example.com</Domain>
+      </Domains>
+      <AccessPaths>
+  <AccessPath>
+    <allowed_networks>Any IPv4</allowed_networks>
+    <auth_profile/>
+    <backend>WS EXCHANGE</backend>
+    <be_path/>
+    <hot_standby>0</hot_standby>
+    <path>/</path>
+    <stickysession_status>0</stickysession_status>
+    <websocket_passthrough>0</websocket_passthrough>
+  </AccessPath>
+</AccessPaths>
+      <Exceptions>
+  <Exception>
+    <op>and</op>
+    <path>/autodiscover/*</path>
+    <path>/Autodiscover/*</path>
+    <skipav>0</skipav>
+    <skipbadclients>0</skipbadclients>
+    <skipcookie>0</skipcookie>
+    <skipform>0</skipform>
+    <skipurl>1</skipurl>
+  </Exception>
+</Exceptions>
+      <ProtocolSecurity>Microsoft Exchange 2016 Autodiscover</ProtocolSecurity>
+      <CompressionSupport>Disable</CompressionSupport>
+      <RewriteHTML>0</RewriteHTML>
+      <PassHostHeader>Enable</PassHostHeader>
+      <RewriteCookies>Enable</RewriteCookies>
+      <IntrusionPrevention>WAN TO DMZ</IntrusionPrevention>
+      <TrafficShapingPolicy>None</TrafficShapingPolicy>
+      <Certificate>example.com Wildcard</Certificate>
+      <RedirectHTTP>Enable</RedirectHTTP>
+    </HTTPBasedPolicy>
+  </FirewallRule>
+    <FirewallRuleGroup transactionid="">
+    <Name>WAF Rules</Name>
+    <Description/>
+    <SecurityPolicyList>
+      <SecurityPolicy>WAF owa.example.com</SecurityPolicy>
+      <SecurityPolicy>WAF autodiscover.example.com</SecurityPolicy>
+    </SecurityPolicyList>
+    <SourceZones>
+      <Zone>WAN</Zone>
+    </SourceZones>
+    <Policytype>WAF rule</Policytype>
+  </FirewallRuleGroup>
+</Configuration>
