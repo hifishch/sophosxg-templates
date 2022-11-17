@@ -7,7 +7,7 @@ This Rule creates following Objects in your Sophos Firewall:
 * WAF-Firewall-Rule named "WAF autodiscover.example.com" Referencing to Webserver Named "WS EXCHANGE" using the Protection Policy "Microsoft Exchange 2016 Autodiscover"
 * Firewal-Rule Group "WAF Rules" containing those two WAF-Firewall-Rules.
 
-## Some Assembly Required: This file needs to be modifyed before it is ready to be imported.
+## Some Assembly Required: This file needs to be modifyed before it is ready to be imported!
 Please Note that you need to make the exported File to a TAR-Ball before uploading to your Sophos Appliance.
 ### Suggested Workflow:
 1. Search & Replace "example.com Wildcard" with the Name for your Wildcard Certificate
