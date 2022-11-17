@@ -50,8 +50,11 @@
     <SkipRemoteLookups>Disable</SkipRemoteLookups>
     <ParanoiaLevel>3</ParanoiaLevel>
     <SkipFilterRules>
+      <FilterRules>900000</FilterRules>
       <FilterRules>920272</FilterRules>
+      <FilterRules>920300</FilterRules>
       <FilterRules>920420</FilterRules>
+      <FilterRules>941120</FilterRules>
       <FilterRules>942420</FilterRules>
       <FilterRules>960010</FilterRules>
       <FilterRules>960015</FilterRules>
@@ -63,8 +66,6 @@
     </SkipFilterRules>
     <ThreatFilters>
       <Filter>Application attacks</Filter>
-      <Filter>SQL injection attacks</Filter>
-      <Filter>XSS attacks</Filter>
       <Filter>Protocol enforcement</Filter>
       <Filter>Scanner detection</Filter>
       <Filter>Data leakages</Filter>
@@ -94,6 +95,7 @@
     <SkipRemoteLookups>Disable</SkipRemoteLookups>
     <ParanoiaLevel>3</ParanoiaLevel>
     <SkipFilterRules>
+      <FilterRules>920300</FilterRules>
       <FilterRules>960015</FilterRules>
       <FilterRules>960911</FilterRules>
     </SkipFilterRules>
