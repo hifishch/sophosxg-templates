@@ -16,3 +16,10 @@ Please Note that you need to make the exported File to a TAR-Ball before uploadi
 4. Search & Replace "172.20.20.20" with your Exchange-Servers internal IP.
 5. Create TAR-Ball and Import it to your Sophos Appliance
 6. Change other Details (EG Public IP etc.) in the WebGUI of your Appliance.
+
+## Used Sources:
+* Sophos Firewall: Web Application Firewall for Exchange 2016 https://support.sophos.com/support/s/article/KB-000040209?language=en_US
+* Sophos XG 18 Webserver Protection und Exchange 2019 https://www.frankysweb.de/sophos-xg-18-webserver-protection-und-exchange-2019/
+
+## Special thank to:
+Manuel Koller
