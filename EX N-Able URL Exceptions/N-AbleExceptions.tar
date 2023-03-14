@@ -1,0 +1,90 @@
+Entities.xml����������������������������������������������������������������������������������������0100777�0000000�0000000�00000007327�14334415226�010337� 0����������������������������������������������������������������������������������������������������ustar�00�������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������<?xml version="1.0" encoding="UTF-8"?>
+<Configuration APIVersion="1900.1" IPS_CAT_VER="1">
+  <WebFilterException transactionid="">
+    <Name>N-able Communication URLs</Name>
+    <Desc/>
+    <NewName>N-able Communication URLs</NewName>
+    <Enabled>on</Enabled>
+    <HttpsDecrypt>on</HttpsDecrypt>
+    <CertValidation>on</CertValidation>
+    <VirusScan>on</VirusScan>
+    <ZeroDayProtection>on</ZeroDayProtection>
+    <PolicyCheck>on</PolicyCheck>
+    <EnableSrcIP>no</EnableSrcIP>
+    <EnableDstIP>no</EnableDstIP>
+    <EnableURLRegex>yes</EnableURLRegex>
+    <EnableWebCat>no</EnableWebCat>
+    <IsDefault>no</IsDefault>
+    <DomainList>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?logicnow\.us/</URLRegex>
+      <URLRegex>upload2germany1.systemmonitor.eu.com</URLRegex>
+      <URLRegex>avery-eu-central-1-svc.logicnow.us</URLRegex>
+      <URLRegex>avery-eu-central-1-cdn.logicnow.us</URLRegex>
+      <URLRegex>cannonball-eu-central-1-push.logicnow.us</URLRegex>
+      <URLRegex>rm-downloads.logicnow.com</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?systemmonitor\.eu\.com/</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?system-monitor\.com/</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?logicnow\.com/</URLRegex>
+      <URLRegex>checks-api.emea.system-monitor.com</URLRegex>
+      <URLRegex>upload3germany1.systemmonitor.eu.com</URLRegex>
+      <URLRegex>upload4germany1.systemmonitor.eu.com</URLRegex>
+      <URLRegex>upload1germany1.systemmonitor.eu.com</URLRegex>
+    </DomainList>
+  </WebFilterException>
+  <WebFilterException transactionid="">
+    <Name>N-able Patch Management Engine</Name>
+    <Desc/>
+    <NewName>N-able Patch Management Engine</NewName>
+    <Enabled>on</Enabled>
+    <HttpsDecrypt>on</HttpsDecrypt>
+    <CertValidation>on</CertValidation>
+    <VirusScan>on</VirusScan>
+    <ZeroDayProtection>on</ZeroDayProtection>
+    <PolicyCheck>on</PolicyCheck>
+    <EnableSrcIP>no</EnableSrcIP>
+    <EnableDstIP>no</EnableDstIP>
+    <EnableURLRegex>yes</EnableURLRegex>
+    <EnableWebCat>no</EnableWebCat>
+    <IsDefault>no</IsDefault>
+    <DomainList>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?n-able\.com/</URLRegex>
+      <URLRegex>go.microsoft.com</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?update\.microsoft\.com/</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?windowsupdate\.com/</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?download\.microsoft\.com/</URLRegex>
+	  <URLRegex>^([A-Za-z0-9.-]*\.)?office\.net/</URLRegex>
+      <URLRegex>sis.n-able.com</URLRegex>
+    </DomainList>
+  </WebFilterException>
+  <WebFilterException transactionid="">
+    <Name>N-able MAV</Name>
+    <Desc/>
+    <NewName>N-able MAV</NewName>
+    <Enabled>on</Enabled>
+    <HttpsDecrypt>on</HttpsDecrypt>
+    <CertValidation>on</CertValidation>
+    <VirusScan>on</VirusScan>
+    <ZeroDayProtection>on</ZeroDayProtection>
+    <PolicyCheck>on</PolicyCheck>
+    <EnableSrcIP>no</EnableSrcIP>
+    <EnableDstIP>no</EnableDstIP>
+    <EnableURLRegex>yes</EnableURLRegex>
+    <EnableWebCat>no</EnableWebCat>
+    <IsDefault>no</IsDefault>
+    <DomainList>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?cdn-sw\.net/</URLRegex>
+      <URLRegex>breck-eu-central-1-svc.logicnow.us</URLRegex>
+      <URLRegex>cannonball-eu-central-1-push.logicnow.us</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?bitdefender\.com/</URLRegex>
+      <URLRegex>breck-files.logicnow.us</URLRegex>
+      <URLRegex>data.cdn-sw.net</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?remote\.management/</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?bdnsrt\.org/</URLRegex>
+      <URLRegex>gi.wit.wtf</URLRegex>
+      <URLRegex>^([A-Za-z0-9.-]*\.)?bitdefender\.net/</URLRegex>
+      <URLRegex>eu-central-1.breckenridge.remote.management</URLRegex>
+      <URLRegex>breck-update.logicnow.us</URLRegex>
+    </DomainList>
+  </WebFilterException>
+</Configuration>
+�������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������
