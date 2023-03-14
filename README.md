@@ -3,7 +3,7 @@ This repo contains multiple (edited) XML exports of services & service groups fr
 ## Types
 This repo contains multiple types of configurations recognizable by the first two letters of the folders.
 ### EX - Exeptions
-Conains Web-Eceptions
+Contains Web-Exceptions
 ### SG - Service Group
 Conains a service group and the corresponding services.
 ### SV - Service Objects
