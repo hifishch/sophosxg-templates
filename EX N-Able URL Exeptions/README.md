@@ -1,5 +1,5 @@
-# Template for Enable Webfilter Exeptions
-Creates following Web Filte Exeptions:
+# Template for Enable Webfilter Exceptions
+Creates following Web Filter Exceptions:
 
 ## N-able Communication URLs
 * ^([A-Za-z0-9.-]*\.)?logicnow\.us/
