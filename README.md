@@ -5,9 +5,9 @@ This repo contains multiple types of configurations recognizable by the first tw
 ### EX - Exeptions
 Contains Web-Exceptions
 ### SG - Service Group
-Conains a service group and the corresponding services.
+Contains a service group and the corresponding services.
 ### SV - Service Objects
-Conains service objects only
+Contains service objects only
 ### WAF - Web Application Firewall Rules
 Contains specific policies for Web Application Firewall (WAF).
 These templates usually require manual editing of the XML before importing them.
